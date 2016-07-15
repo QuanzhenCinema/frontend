@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>全真影院-后台登录</title>
+
+    <!--设置网页图标-->
+    <link rel="shortcut icon" href="images/logo.ico" type=”image/x-icon” />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/input.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <a href="index.html">
+            <span><img src="images/logo.png"> </span>
+        </a>
+    </div>
+</div>
+
+<div class="jumbotron row">
+    <div class="col-md-4"></div>
+    <div class="container col-md-4">
+        <div class="input-container">
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="text" id="input-1"/>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-1">
+                    <span class="input__label-content input__label-content--hoshi">工号</span>
+                </label>
+            </span>
+
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="password" id="input-2"/>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-2">
+                    <span class="input__label-content input__label-content--hoshi">密码</span>
+                </label>
+            </span>
+
+            <button type="button" class="btn btn-default btn-lg btn-block btn-login">登　录</button>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>全真电影院</h1>
+                <p>一个智障数据库项目，很全真</p>
+            </div>
+            <div class="col-md-3">
+                <address>
+                    <strong>Tongji University,</strong><br>
+                    4800 Cao'an Highway, Jiading District,<br>
+                    Shanghai 201804<br>
+                </address>
+            </div>
+            <div class="col-md-3">
+                <address>
+                    <strong>项目地址</strong><br>
+                    <a href="https://github.com/QuanzhenCinema">https://github.com/QuanzhenCinema</a>
+                </address>
+            </div>
+            <div class="col-md-3">
+                <strong><a href="developer.html">开发人员</a> </strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/classie.js"></script>
+<script>
+    (function() {
+        // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+        if (!String.prototype.trim) {
+            (function() {
+                // Make sure we trim BOM and NBSP
+                var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                String.prototype.trim = function() {
+                    return this.replace(rtrim, '');
+                };
+            })();
+        }
+
+        [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+            // in case the input is already filled..
+            if( inputEl.value.trim() !== '' ) {
+                classie.add( inputEl.parentNode, 'input--filled' );
+            }
+
+            // events:
+            inputEl.addEventListener( 'focus', onInputFocus );
+            inputEl.addEventListener( 'blur', onInputBlur );
+        } );
+
+        function onInputFocus( ev ) {
+            classie.add( ev.target.parentNode, 'input--filled' );
+        }
+
+        function onInputBlur( ev ) {
+            if( ev.target.value.trim() === '' ) {
+                classie.remove( ev.target.parentNode, 'input--filled' );
+            }
+        }
+    })();
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
