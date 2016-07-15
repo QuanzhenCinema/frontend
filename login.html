@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Log in</title>
+    <title>全真影院-后台登录</title>
 
+    <!--设置网页图标-->
+    <link rel="shortcut icon" href="images/logo.ico" type=”image/x-icon” />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
     <link href="css/input.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,47 +23,22 @@
     <![endif]-->
 </head>
 <body>
-<!-- Fixed navbar -->
-<!--<nav class="navbar navbar-default navbar-static-top">-->
-    <!--<div class="container">-->
-        <!--<div class="navbar-header">-->
-            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
-                <!--<span class="sr-only">Toggle navigation</span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-                <!--<span class="icon-bar"></span>-->
-            <!--</button>-->
-            <!--<a class="navbar-brand" href="index.html">MOMENT</a>-->
-        <!--</div>-->
-        <!--<div id="navbar" class="navbar-collapse collapse">-->
-            <!--<ul class="nav navbar-nav">-->
-                <!--<li><a href="#">发布</a></li>-->
-                <!--<li><a href="#">管理</a></li>-->
-                <!--<li class="dropdown">-->
-                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心 <span class="caret"></span></a>-->
-                    <!--<ul class="dropdown-menu">-->
-                        <!--<li><a href="#">我的关注</a></li>-->
-                        <!--<li><a href="#">我的项目</a></li>-->
-                        <!--<li role="separator" class="divider"></li>-->
-                        <!--<li><a href="#">个人信息</a></li>-->
-                    <!--</ul>-->
-                <!--</li>-->
-            <!--</ul>-->
-            <!--<ul class="nav navbar-nav navbar-right">-->
-                <!--<li><a href="sign.html">注册</a></li>-->
-                <!--<li><a href="login.html">登陆</a></li>-->
-            <!--</ul>-->
-        <!--</div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
-    <!--</div>-->
-<!--</nav>-->
+<div class="header">
+    <div class="container">
+        <a href="index.html">
+            <span><img src="images/logo.png"> </span>
+        </a>
+    </div>
+</div>
 
 <div class="jumbotron row">
+    <div class="col-md-4"></div>
     <div class="container col-md-4">
         <div class="input-container">
             <span class="input input--hoshi">
                 <input class="input__field input__field--hoshi" type="text" id="input-1"/>
                 <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-1">
-                    <span class="input__label-content input__label-content--hoshi">注册邮箱/手机号码</span>
+                    <span class="input__label-content input__label-content--hoshi">工号</span>
                 </label>
             </span>
 
@@ -71,7 +49,7 @@
                 </label>
             </span>
 
-            <button type="button" class="btn btn-default btn-lg btn-block btn-login">登　陆</button>
+            <button type="button" class="btn btn-default btn-lg btn-block btn-login">登　录</button>
 
         </div>
     </div>
@@ -81,9 +59,9 @@
 <div class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h1>MOMENT</h1>
-                <p>一个学生-企业-导师的创新创业项目交流发布平台</p>
+            <div class="col-md-3">
+                <h1>全真电影院</h1>
+                <p>一个智障数据库项目，很全真</p>
             </div>
             <div class="col-md-3">
                 <address>
@@ -94,9 +72,12 @@
             </div>
             <div class="col-md-3">
                 <address>
-                    <strong>Conatct</strong><br>
-                    <a href="mailto: me@tungyee-ho.site">me@tungyee-ho.site</a>
+                    <strong>项目地址</strong><br>
+                    <a href="https://github.com/QuanzhenCinema">https://github.com/QuanzhenCinema</a>
                 </address>
+            </div>
+            <div class="col-md-3">
+                <strong><a href="developer.html">开发人员</a> </strong>
             </div>
         </div>
     </div>

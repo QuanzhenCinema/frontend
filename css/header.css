@@ -1,0 +1,9 @@
+.header span{
+    display: block;
+    text-align: center;
+}
+
+.header .container{
+    margin-top:16px;
+    margin-bottom: 15px;
+}

@@ -1,3 +1,8 @@
+body {
+    background-color: #f3f3f3;
+    font-family: "Helvetica Neue","微软雅黑", Helvetica, Arial, sans-serif;
+}
+
 .jumbotron {
     background: url("../images/login_bg.png") left no-repeat;
     background-size: cover;
@@ -8,7 +13,7 @@
 .jumbotron .container{
     margin:0;
     height:inherit;
-    background-color: rgba(255,245,184,0.6);
+    background-color: rgba(243, 243, 243, 0.5);
     padding:0;
 }
 
