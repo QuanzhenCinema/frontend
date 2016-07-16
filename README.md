@@ -1,10 +1,12 @@
 # frontend
 全真电影院数据库项目の前端静态页面
+
 `master`分支已弃用，请浏览`gh-pages`分支。
 点击本库的[Github Pages](https://quanzhencinema.github.io/frontend/)查看DEMO，在登录页右下角点击`经理页面`直接跳转到经理后台页面。
 
 ##主要更新
 > 详细更新看commit记录就好了
+
 + July 16 上线了后台模板
 
 ## 文件安排（暂定）
