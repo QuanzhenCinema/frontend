@@ -22,6 +22,7 @@
 + 折扣管理      `pages/discount.html`
 + 会员管理      `pages/member.html`
 + 员工管理      `pages/staff.html`
++ 周边销售      `pages/snack.html`
 
 ## 文件安排（暂定）
 + 用户界面首页`.html`文件放于最外层；要是首页的文件多起来的话大概会打个包放在`/customer`里面
