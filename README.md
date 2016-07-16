@@ -27,12 +27,12 @@
 + 用户界面首页`.html`文件放于最外层；要是首页的文件多起来的话大概会打个包放在`/customer`里面
 + 经理后台管理页面使用了已有的后台组件，为了方便全部放在`/manager`文件夹中。其中`.html`文件全部放在`/manager/pages`下
 + 销售员的界面预计会放在`/saler`里面（还没放）
-+ 出于能省就省的穷人心态全部`.html`引用的bootstrap相关文件都是最顶层的`/css`,`/js`和`/font`文件夹里的
++ 出于能省就省的穷人心态全部`.html`引用的bootstrap相关文件都是最顶层的`/css`, `/js`和`/fonts`文件夹里的
 + 各种图片资源到底是分开放还是一起放并没有想好……先就全部都放在`/images`下吧
 
 ## 使用的轮子及其文档
 + 全局样式以及各种组件[bootstrap全家桶](http://www.bootcss.com/)
-+ 后台模板[SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/)
++ 后台模板[SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/)  
   这个模板似乎还自带了一大波数据可视化的库而且还挺好看的……于是可能就不用用别的库了【
 + 登录界面的输入框动画模板[Text Input Effect里面的Hoshi](http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/)
 + 排片的时间管理模块[FullCalendar](http://fullcalendar.io/)
