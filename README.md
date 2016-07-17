@@ -38,3 +38,4 @@
 + 登录界面的输入框动画模板[Text Input Effect里面的Hoshi](http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/)
 + 排片的时间管理模块[FullCalendar](http://fullcalendar.io/)
 + 在线选座模块[jQuery Seat Charts](https://github.com/mateuszmarkowski/jQuery-Seat-Charts)
++ 可编辑表格控件[X-editable(Bootstrap)](http://vitalets.github.io/x-editable/)
