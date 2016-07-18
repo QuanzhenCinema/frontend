@@ -1,0 +1,13 @@
+body {
+    font-family: "Helvetica Neue","微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+.jumbotron {
+    margin-bottom:0;
+}
+
+.form-group
+{
+    margin-top:60px;
+    margin-bottom: 0px;
+}

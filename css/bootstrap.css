@@ -1340,6 +1340,7 @@ mark,
 .text-primary {
   color: #337ab7;
 }
+
 a.text-primary:hover,
 a.text-primary:focus {
   color: #286090;
