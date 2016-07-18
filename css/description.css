@@ -1,0 +1,35 @@
+.jumbotron{
+    background: #4c649d;
+    background-size: auto;
+    height: auto;
+    margin-bottom:0;
+    padding:0;
+}
+.jumbotron .container{
+    margin-inside: 80px;
+    height:inherit;
+    padding: 20px;
+}
+
+.jumbotron p{
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.text-indent{
+    text-indent: 30px;
+}
+
+.jumbotron h2{
+    font-size: 24px;
+    color: white;
+    margin: auto;
+}
+
+.jumbotron h6{
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+}
