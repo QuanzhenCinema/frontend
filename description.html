@@ -11,7 +11,6 @@
     <link rel="shortcut icon" href="images/logo.ico" type=”image/x-icon” />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-table.css" rel="stylesheet">
     <link href="css/header_visitor.css" rel="stylesheet">
     <link href="css/description.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
@@ -79,12 +78,24 @@
 <!-这是排片购票--->
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-12">
             <h3>排片购票</h3>
-            <h4>观影日期</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <h5>观影日期</h5>
+        </div>
+        <div class="col-md-11">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">7.21</a></li>
+                <li role="presentation"><a href="http://www.damai.cn">7.22</a></li>
+                <li role="presentation"><a href="#">7.23</a></li>
+            </ul>
         </div>
     </div>
 </div>
+
 
 <div class="container">
     <div class="row">
@@ -107,17 +118,20 @@
                     <td>10:15</td>
                     <td>中文/3D</td>
                     <td>二号厅</td>
-                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>                </tr>
+                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
+                </tr>
                 <tr>
                     <td>12:00</td>
                     <td>中文/3D</td>
                     <td>三号厅</td>
-                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>                </tr>
+                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
+                </tr>
                 <tr>
                     <td>20:00</td>
                     <td>中文/3D</td>
                     <td>三号厅</td>
-                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>                </tr>
+                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
+                </tr>
             </table>
         </div>
     </div>
@@ -153,6 +167,13 @@
     </div>
 </div>
 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>

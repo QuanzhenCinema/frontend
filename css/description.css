@@ -33,6 +33,9 @@
     color: white;
     margin-top: 10px;
 }
+.h5, h5 {
+    font-size: 16px;
+}
 
 .table th, td, tr{
     text-align: center;
@@ -56,4 +59,16 @@
     font-size: 13px;
     line-height: 1.5;
     border-radius: 3px;
+}
+
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 12px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #8192BA;
 }
