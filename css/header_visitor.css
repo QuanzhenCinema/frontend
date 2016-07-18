@@ -1,4 +1,8 @@
-.header span {
+body {
+    background-color: #f3f3f3;
+    font-family: "Helvetica Neue","微软雅黑", Helvetica, Arial, sans-serif;
+}
+.header span{
     display: block;
     text-align: left;
 }
