@@ -22,6 +22,31 @@
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/bootstrap-table.css">
+    <link href="../../css/bootstrap-editable.css">
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../bower_components/raphael/raphael-min.js"></script>
+    <script src="../bower_components/morrisjs/morris.min.js"></script>
+    <script src="../js/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Bootstrap Editable-->
+    <script src="../../js/bootstrap-table.js"></script>
+    <script src="../../js/bootstrap-table-zh-CN.min.js"></script>
+    <script src="../../js/bootstrap-table-editable.js"></script>
+    <script src="../../js/bootstrap-editable.min.js"></script>
+    <script src="../../js/ga.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,6 +97,19 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">员工管理</h1>
+                <table id="table" class="table"
+                       data-toggle="table"
+                       data-pagination="true"
+                       data-show-export="true"
+                       data-url="../json/data1.json">
+                    <thead>
+                    <tr>
+                        <th data-field="id">ID</th>
+                        <th data-field="name" data-editable="true">Item Name</th>
+                        <th data-field="price" data-editable="true">Item Price</th>
+                    </tr>
+                    </thead>
+                </table>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -81,22 +119,6 @@
 </div>
 <!-- /#wrapper -->
 
-<!-- jQuery -->
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="../../js/bootstrap.min.js"></script>
-
-<!-- Metis Menu Plugin JavaScript -->
-<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-<!-- Morris Charts JavaScript -->
-<script src="../bower_components/raphael/raphael-min.js"></script>
-<script src="../bower_components/morrisjs/morris.min.js"></script>
-<script src="../js/morris-data.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
 
