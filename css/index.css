@@ -6,3 +6,9 @@ body {
     margin-bottom:0;
 }
 
+
+.jumbotron img{
+    max-width: 100%;
+
+}
+
