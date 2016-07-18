@@ -1599,11 +1599,14 @@ pre code {
     width: 970px;
   }
 }
+
+/*这里改了东西!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 90%;
   }
 }
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
