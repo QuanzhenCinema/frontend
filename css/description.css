@@ -33,3 +33,27 @@
     color: white;
     margin-top: 10px;
 }
+
+.table th, td, tr{
+    text-align: center;
+}
+
+.table th {
+    background-color: #8192BA;
+    color: white;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f7f7f7;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #D4CFDB;
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+    padding: 1px 5px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
