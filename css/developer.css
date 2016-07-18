@@ -1,3 +1,7 @@
+body {
+    background-color: #f3f3f3;
+    font-family: "Helvetica Neue","微软雅黑", Helvetica, Arial, sans-serif;
+}
 .jumbotron {
     padding-top: 18px;
     padding-bottom: 18px;
