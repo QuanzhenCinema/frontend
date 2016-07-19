@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="css/seat.css" rel="stylesheet">
+    <link href="css/jquery.seat-chart.css" rel="stylesheet">
+
 </head>
 <body>
-<link href="css/seat.css" rel="stylesheet">
+
 <div class="demo">
     <div id="seat-map">
         <div class="front">屏幕</div>
@@ -26,8 +29,9 @@
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="jquery.seat-charts.min.js"></script>
-
-var price = 80; //票价
+<script>
+var price =;
+//票价
 $(document).ready(function() {
 var $cart = $('#selected-seats'), //座位区
 $counter = $('#counter'), //票数
@@ -96,5 +100,6 @@ total += price;
 
 return total;
 }
+</script>
 </body>
 </html>
