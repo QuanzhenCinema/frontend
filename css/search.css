@@ -10,6 +10,7 @@
     float: left;
 }
 .col-xs-8 {
+    width: 49%;
     position: relative;
     min-height: 1px;
     margin-right: 15px;
