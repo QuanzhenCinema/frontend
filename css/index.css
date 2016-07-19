@@ -6,8 +6,10 @@ body {
     margin-bottom:0;
 }
 
-.form-group
-{
-    margin-top:60px;
-    margin-bottom: 0px;
+
+.jumbotron img{
+    max-width: 100%;
+
 }
+
+
