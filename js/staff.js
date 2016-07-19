@@ -24,7 +24,7 @@ var TableInit = function () {
             toolbar: '#toolbar',                //工具按钮用哪个容器
             striped: true,                      //是否显示行间隔色
             cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
-            pagination: true,                   //是否显示分页（*）
+            pagination: false,                   //是否显示分页（*）
             sortable: false,                     //是否启用排序
             sortOrder: "asc",                   //排序方式
             queryParams: oTableInit.queryParams,//传递参数（*）
@@ -46,18 +46,24 @@ var TableInit = function () {
             columns: [{
                 checkbox: true
             }, {
-                field: 'Name',
-                title: '部门名称'
+                field: 'id',
+                title: '工号'
             }, {
-                field: 'ParentName',
-                title: '上级部门'
+                field: 'name',
+                title: '姓名'
             }, {
-                field: 'Level',
-                title: '部门级别'
+                field: 'password',
+                title: '密码'
             }, {
-                field: 'Desc',
-                title: '描述'
-            }, ]
+                field: 'gender',
+                title: '性别'
+            }, {
+                field: 'position',
+                title: '职位'
+            }, {
+                field: 'role',
+                title: '角色'
+            }]
         });
     };
 

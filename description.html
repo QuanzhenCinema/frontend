@@ -15,6 +15,13 @@
     <link href="css/description.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -86,56 +93,59 @@
         </div>
         <div class="col-md-11">
             <ul class="nav nav-pills">
-                <li role="presentation" class="active"><a href="#">7.21(周四)</a></li>
-                <li role="presentation"><a href="http://www.damai.cn">7.22(周五)</a></li>
-                <li role="presentation"><a href="#">7.23(周六)</a></li>
+                <li role="presentation" data-toggle="tab" href="#day1" class="active"><a href="#">7.21(周四)</a></li>
+                <li role="presentation" data-toggle="tab" href="#day2"><a href="#">7.22(周五)</a></li>
+                <li role="presentation" data-toggle="tab" href="#day3"><a href="#">7.23(周六)</a></li>
             </ul>
+            <div class="tab-content">
+                <div id="day1" class="tab-pane fade in active">
+                    <br>
+                    <table class="table table-bordered table-hover table-striped">
+                        <tr>
+                            <th>场次</th>
+                            <th>语言/版本</th>
+                            <th>放映厅</th>
+                            <th>购票</th>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>中文/3D</td>
+                            <td>一号厅</td>
+                            <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:15</td>
+                            <td>中文/3D</td>
+                            <td>二号厅</td>
+                            <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>中文/3D</td>
+                            <td>三号厅</td>
+                            <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
+                        </tr>
+                        <tr>
+                            <td>20:00</td>
+                            <td>中文/3D</td>
+                            <td>三号厅</td>
+                            <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
+                        </tr>
+                    </table>
+                </div>
+                <div id="day2" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1.</p>
+                </div>
+                <div id="day3" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Some content in menu 2.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <table class="table table-bordered table-hover table-striped">
-                <tr>
-                    <th>场次</th>
-                    <th>语言/版本</th>
-                    <th>放映厅</th>
-                    <th>购票</th>
-                </tr>
-                <tr>
-                    <td>10:00</td>
-                    <td>中文/3D</td>
-                    <td>一号厅</td>
-                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>10:15</td>
-                    <td>中文/3D</td>
-                    <td>二号厅</td>
-                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td>中文/3D</td>
-                    <td>三号厅</td>
-                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
-                </tr>
-                <tr>
-                    <td>20:00</td>
-                    <td>中文/3D</td>
-                    <td>三号厅</td>
-                    <td><a href="http://www.damai.cn" class="btn btn-default btn-xs active" role="button">购票</a>
-                </tr>
-            </table>
-        </div>
-    </div>
-</div>
-
-
 
 <!--这是页尾-->
 <div class="footer">
@@ -166,12 +176,6 @@
 </div>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="http://v3.bootcss.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>
