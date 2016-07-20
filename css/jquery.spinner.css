@@ -1,0 +1,81 @@
+html {
+    line-height: 1
+}
+
+q, blockquote {
+    quotes: none
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block
+}
+
+.spinner-sprite, .spinner .decrease, .spinner .decrease[disabled], .spinner .increase, .spinner .value, .spinner .value.passive {
+    background: url('../../../Downloads/spinner/spinner/spinner-sf0d5bd965d.png') no-repeat
+}
+
+.spinner {
+    margin: auto;
+    height: 25px;
+    width: 75px;
+    overflow: hidden;
+    *zoom: 1;
+    background-color: #f3f3f3;
+    border-radius: 3px;
+}
+
+.spinner button, .spinner .value {
+    text-align: center;
+    display: block;
+    float: left;
+    height: 100%;
+    line-height: 25px;
+    margin: 0
+}
+
+.spinner button {
+    border: none;
+    width: 25px;
+    color: #4c649d;
+    font: 22px Arial bold;
+    padding: 0;
+    outline: none
+}
+
+.spinner .decrease {
+    background-position: 0 -50px;
+    cursor: pointer;
+    border: #4c649d solid;
+    border-width: 1px;
+
+}
+
+.spinner .decrease[disabled] {
+    background-position: 0 -75px;
+    cursor: default
+}
+
+.spinner .increase {
+    background-position: 0 0 ;
+    cursor: pointer;
+    border: #4c649d solid;
+    border-width: 1px;
+}
+
+.spinner .value {
+    background-position: 0 -100px;
+    width: 25px;
+    height: 27px;
+    color: black;
+    padding: 0px;
+    border: none;
+}
+
+.spinner .value.passive {
+    background-position: 0 -25px;
+    color: #919191
+}
+
+.spinner .error, .spinner .invalid {
+    background: #aa0000
+}

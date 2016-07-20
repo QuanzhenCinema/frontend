@@ -1,0 +1,24 @@
+body {
+    background-color: #f3f3f3;
+    font-family: "Helvetica Neue","微软雅黑", Helvetica, Arial, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+.table th, td, tr{
+    text-align: center;
+}
+
+.table th {
+    background-color: #8192BA;
+    color: white;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f7f7f7;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #D4CFDB;
+}
+
+

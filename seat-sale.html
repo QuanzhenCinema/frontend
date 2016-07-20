@@ -12,6 +12,8 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/header.css" rel="stylesheet">
 	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/jquery.spinner.css" rel="stylesheet">
+	<link href="css/snacks.css" rel="stylesheet">
 	<link href="css/jquery.seat-charts.css" rel="stylesheet">
 </head>
 
@@ -39,7 +41,7 @@
 						<div id="seat-map">
 							<div class="front">屏幕</div>
 						</div>
-						<div class="booking-details center">
+						<div class="booking-details">
 							<p>影片：大鱼海棠&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp时间：07月21日&nbsp&nbsp&nbsp21:00</p>
 							<p>座位：</p>
 							<ul id="selected-seats"></ul>
@@ -60,7 +62,39 @@
 		</div>
 		<div id="collapseTwo" class="panel-collapse collapse">
 			<div class="panel-body">
-				//这里要加零食的界面
+				<table class="table table-bordered table-hover table-striped">
+					<tr>
+						<th>编号</th>
+						<th>零食</th>
+						<th>价格</th>
+						<th>数量</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>爆米花(小)</td>
+						<td>￥40</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>爆米花(中)</td>
+						<td>￥50</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>爆米花(大)</td>
+						<td>￥65</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>可乐</td>
+						<td>￥15</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+				</table>
+				<button class="checkout-button center">确定购买</button>
 			</div>
 		</div>
 	</div>
@@ -99,6 +133,10 @@
 <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.seat-charts.min.js"></script>
+<script src="js/jquery.spinner.js"></script>
+<script>
+	$('.spinner').spinner();
+</script>
 
 <script type="text/javascript">
 var price = 80; //票价
