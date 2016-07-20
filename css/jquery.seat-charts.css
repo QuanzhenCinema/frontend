@@ -102,7 +102,7 @@ div.seatCharts-seat {
 
 div.seatCharts-row {
     height: 35px;
-    width: 150%;
+    width: 100%;
 }
 
 div.seatCharts-seat.available {
