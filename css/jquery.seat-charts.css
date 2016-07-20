@@ -5,6 +5,17 @@ body {
     margin: auto;
 }
 
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+    text-align: right;
+}
+
+.list-inline h1 {
+    color: darkred;
+}
+
 .demo {
     width: 700px;
     margin: 40px auto 0 auto;
@@ -91,7 +102,7 @@ div.seatCharts-seat {
 
 div.seatCharts-row {
     height: 35px;
-    width:150%;
+    width: 150%;
 }
 
 div.seatCharts-seat.available {
