@@ -12,7 +12,10 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/header.css" rel="stylesheet">
 	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/jquery.spinner.css" rel="stylesheet">
+	<link href="css/snacks.css" rel="stylesheet">
 	<link href="css/jquery.seat-charts.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,7 +42,7 @@
 						<div id="seat-map">
 							<div class="front">屏幕</div>
 						</div>
-						<div class="booking-details center">
+						<div class="booking-details">
 							<p>影片：大鱼海棠&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp时间：07月21日&nbsp&nbsp&nbsp21:00</p>
 							<p>座位：</p>
 							<ul id="selected-seats"></ul>
@@ -60,7 +63,42 @@
 		</div>
 		<div id="collapseTwo" class="panel-collapse collapse">
 			<div class="panel-body">
-				//这里要加零食的界面
+				<table class="table table-bordered table-hover table-striped">
+					<tr>
+						<th>编号</th>
+						<th>零食</th>
+						<th>价格</th>
+						<th>数量</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>爆米花(小)</td>
+						<td>￥40</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>爆米花(中)</td>
+						<td>￥50</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>爆米花(大)</td>
+						<td>￥65</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>可乐</td>
+						<td>￥15</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+				</table>
+                    
+
+
+				<button class="checkout-button center">确定购买</button>
 			</div>
 		</div>
 	</div>
@@ -99,6 +137,10 @@
 <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.seat-charts.min.js"></script>
+<script src="js/jquery.spinner.js"></script>
+<script>
+	$('.spinner').spinner();
+</script>
 
 <script type="text/javascript">
 var price = 80; //票价
@@ -106,7 +148,7 @@ $(document).ready(function() {
 	var $cart = $('#selected-seats'), //座位区
 	$counter = $('#counter'), //票数
 	$total = $('#total'); //总计金额
-
+	
 	var sc = $('#seat-map').seatCharts({
 		map: [  //座位图
 			'___a[,1]a[,2]a[,3]a[,4]a[,5]a[,6]a[,7]a[,8]a[,9]a[,10]a[,11]a[,12]a[,13]a[,14]a[,15]a[,16]a[,17]a[,18]a[,19]a[,20]a[,21]',
@@ -135,7 +177,7 @@ $(document).ready(function() {
 			items : [
 				[ 'a', 'available',   '可选座' ],
 				[ 'a', 'unavailable', '已售出']
-			]
+			]					
 		},
 		click: function () { //点击事件
 			if (this.status() == 'available') { //可选座
@@ -146,14 +188,14 @@ $(document).ready(function() {
 
 				$counter.text(sc.find('selected').length+1);
 				$total.text(recalculateTotal(sc)+price);
-
+							
 				return 'selected';
 			} else if (this.status() == 'selected') { //已选中
 					//更新数量
 					$counter.text(sc.find('selected').length-1);
 					//更新总计
 					$total.text(recalculateTotal(sc)-price);
-
+						
 					//删除已预订座位
 					$('#cart-item-'+this.settings.id).remove();
 					//可选座
@@ -167,7 +209,7 @@ $(document).ready(function() {
 	});
 	//已售出的座位
 	sc.get(['1_2', '4_4','4_5','6_6','6_7','8_5','8_6','8_7','8_8', '10_1', '10_2']).status('unavailable');
-
+		
 });
 //计算总金额
 function recalculateTotal(sc) {
@@ -175,7 +217,7 @@ function recalculateTotal(sc) {
 	sc.find('selected').each(function () {
 		total += price;
 	});
-
+			
 	return total;
 }
 </script>
