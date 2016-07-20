@@ -12,7 +12,10 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/header.css" rel="stylesheet">
 	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/jquery.spinner.css" rel="stylesheet">
+	<link href="css/snacks.css" rel="stylesheet">
 	<link href="css/jquery.seat-charts.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,7 +42,7 @@
 						<div id="seat-map">
 							<div class="front">屏幕</div>
 						</div>
-						<div class="booking-details center">
+						<div class="booking-details">
 							<p>影片：大鱼海棠&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp时间：07月21日&nbsp&nbsp&nbsp21:00</p>
 							<p>座位：</p>
 							<ul id="selected-seats"></ul>
@@ -60,7 +63,42 @@
 		</div>
 		<div id="collapseTwo" class="panel-collapse collapse">
 			<div class="panel-body">
-				//这里要加零食的界面
+				<table class="table table-bordered table-hover table-striped">
+					<tr>
+						<th>编号</th>
+						<th>零食</th>
+						<th>价格</th>
+						<th>数量</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>爆米花(小)</td>
+						<td>￥40</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>爆米花(中)</td>
+						<td>￥50</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>爆米花(大)</td>
+						<td>￥65</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>可乐</td>
+						<td>￥15</td>
+						<td><input type="text" class="spinner"/></td>
+					</tr>
+				</table>
+
+
+
+				<button class="checkout-button center">确定购买</button>
 			</div>
 		</div>
 	</div>
@@ -99,6 +137,10 @@
 <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.seat-charts.min.js"></script>
+<script src="js/jquery.spinner.js"></script>
+<script>
+	$('.spinner').spinner();
+</script>
 
 <script type="text/javascript">
 	var price = 80; //票价
@@ -111,8 +153,8 @@
 			map: [  //座位图
 				'___________a[1_1,1]a[1_2,2]a[1_3,3]a[1_4,4]a[1_5,5]a[1_6,6]a[1_7,7]a[1_8,8]a[1_9,9]a[1_10,10]a[1_11,11]a[1_12,12]a[1_13,13]a[1_14,14]______',
 				'______a[2_1,1]a[2_2,2]a[2_3,3]a[2_4,4]a[2_5,5]a[2_6,6]a[2_7,7]a[2_8,8]a[2_9,9]a[2_10,10]a[2_11,11]a[2_12,12]a[2_13,13]a[2_14,14]a[2_15,15]a[2_16,16]a[2_17,17]a[2_18,18]a[2_19,19]a[2_20,20]a[2_21,21]a[2_22,22]a[2_23,23]a[2_24,24]a[2_25,25]',
-				'_________________________________',
-				'_________________________________',
+				'_______________________________',
+				'_______________________________',
 
 				'_____a[3_1,1]a[3_2,2]a[3_3,3]a[3_4,4]a[3_5,5]a[3_6,6]a[3_7,7]a[3_8,8]a[3_9,9]a[3_10,10]a[3_11,11]a[3_12,12]a[3_13,13]a[3_14,14]a[3_15,15]a[3_16,16]a[3_17,17]a[3_18,18]a[3_19,19]a[3_20,20]a[3_21,21]a[3_22,22]a[3_23,23]a[3_24,24]a[3_25,25]a[3_26,26]',
 				'_____a[4_1,1]a[4_2,2]a[4_3,3]a[4_4,4]a[4_5,5]a[4_6,6]a[4_7,7]a[4_8,8]a[4_9,9]a[4_10,10]a[4_11,11]a[4_12,12]a[4_13,13]a[4_14,14]a[4_15,15]a[4_16,16]a[4_17,17]a[4_18,18]a[4_19,19]a[4_20,20]a[4_21,21]a[4_22,22]a[4_23,23]a[4_24,24]a[4_25,25]a[4_26,26]',
@@ -125,13 +167,14 @@
 				'_a[11_1,1]a[11_2,2]__a[11_3,3]a[11_4,4]a[11_5,5]a[11_6,6]a[11_7,7]a[11_8,8]a[11_9,9]a[11_10,10]a[11_11,11]a[11_12,12]a[11_13,13]a[11_14,14]a[11_15,15]a[11_16,16]a[11_17,17]a[11_18,18]a[11_19,19]a[11_20,20]a[11_21,21]a[11_22,22]a[11_23,23]a[11_24,24]a[11_25,25]a[11_26,26]a[11_27,27]a[11_28,28]',
 				'_a[12_1,1]a[12_2,2]__a[12_3,3]a[12_4,4]a[12_5,5]a[12_6,6]a[12_7,7]a[12_8,8]a[12_9,9]a[12_10,10]a[12_11,11]a[12_12,12]a[12_13,13]a[12_14,14]a[12_15,15]a[12_16,16]a[12_17,17]a[12_18,18]a[12_19,19]a[12_20,20]a[12_21,21]a[12_22,22]a[12_23,23]a[12_24,24]a[12_25,25]a[12_26,26]a[12_27,27]a[12_28,28]',
 				'a[13_1,1]a[13_2,2]a[13_3,3]a[13_4,4]a[13_5,5]a[13_6,6]a[13_7,7]a[13_8,8]a[13_9,9]a[13_10,10]a[13_11,11]a[13_12,12]a[13_13,13]a[13_14,14]a[13_15,15]a[13_16,16]a[13_17,17]a[13_18,18]a[13_19,19]a[13_20,20]a[13_21,21]a[13_22,22]a[13_23,23]a[13_24,24]a[13_25,25]a[13_26,26]a[13_27,27]a[13_28,28]a[13_29,29]a[13_30,30]a[13_31,31]',
-                 ],
-				naming : {
+
+			],
+			naming : {
 				top : false,
 				rows: ['1', '2','','', '3', '4', '5','6','7','8','9','10','11','12','13']
-//			getLabel : function (character, row, column) {
-//				return column;
-//			}
+				//				getLabel : function (character, row, column) {
+//					return column;
+//				}
 			},
 			legend : { //定义图例
 				node : $('#legend'),
@@ -142,7 +185,7 @@
 			},
 			click: function () { //点击事件
 				if (this.status() == 'available') { //可选座
-					$('<li>'+(this.settings.id)+'座</li>')
+					$('<li>'+this.settings.id+'座</li>')
 							.attr('id', 'cart-item-'+this.settings.id)
 							.data('seatId', this.settings.id)
 							.appendTo($cart);
