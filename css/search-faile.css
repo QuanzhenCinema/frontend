@@ -1,0 +1,19 @@
+body {
+    background-color: #f3f3f3;
+    font-family: "Helvetica Neue","微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    margin: 10px 440px 10px 440px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .jumbotron {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+}
+
