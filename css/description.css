@@ -12,9 +12,10 @@
 }
 
 .jumbotron p{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
-    color: white;
+    line-height: 27px;
+    color: #f3f3f3;
     margin-bottom: 0px;
 }
 
@@ -23,9 +24,8 @@
 }
 
 .jumbotron h2{
-    font-size: 24px;
+    font-size: 36px;
     color: white;
-    margin: auto;
 }
 
 .jumbotron h6{
