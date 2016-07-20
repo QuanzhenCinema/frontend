@@ -1,6 +1,8 @@
 body {
     background-color: #f3f3f3;
     font-family: "Helvetica Neue","微软雅黑", Helvetica, Arial, sans-serif;
+    width: 90%;
+    margin: auto;
 }
 
 .demo {
@@ -112,7 +114,7 @@ div.seatCharts-seat.unavailable {
 
 div.seatCharts-container {
     border-right: 1px dotted #adadad;
-    margin-left: 200px;
+    margin-left: 180px;
 }
 
 div.seatCharts-legend {
