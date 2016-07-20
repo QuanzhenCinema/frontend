@@ -34,8 +34,8 @@ body {
 }
 
 .front {
-    width: 800px;
-    margin: 5px 20px 5px 20px;
+    width: 100%;
+    margin: 5px 0px 5px 0px;
     background-color: #8192BA;
     color: white;
     text-align: center;
@@ -91,6 +91,7 @@ div.seatCharts-seat {
 
 div.seatCharts-row {
     height: 35px;
+    width:150%;
 }
 
 div.seatCharts-seat.available {
