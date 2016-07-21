@@ -11,5 +11,11 @@ body {
     max-width: 100%;
 
 }
+.btn{
+    padding: 9px 12px;
+}
 
+.pull-right{
+    margin-top:60px;
+}
 
